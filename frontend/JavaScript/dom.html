@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DOM document object module | XXZZGOGO</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/spider.png">
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.62942668.css" as="style"><link rel="preload" href="/assets/js/app.7acbcb6e.js" as="script"><link rel="preload" href="/assets/js/2.b0722bfe.js" as="script"><link rel="preload" href="/assets/js/3.905a52e1.js" as="script"><link rel="preload" href="/assets/js/12.c82412a4.js" as="script"><link rel="prefetch" href="/assets/js/10.bcee2f9c.js"><link rel="prefetch" href="/assets/js/11.658cd361.js"><link rel="prefetch" href="/assets/js/13.fc07f828.js"><link rel="prefetch" href="/assets/js/14.978995d9.js"><link rel="prefetch" href="/assets/js/15.4a8d360d.js"><link rel="prefetch" href="/assets/js/16.0247f987.js"><link rel="prefetch" href="/assets/js/17.8736e5eb.js"><link rel="prefetch" href="/assets/js/18.9b3ef7a2.js"><link rel="prefetch" href="/assets/js/19.9a6b228e.js"><link rel="prefetch" href="/assets/js/20.1d56a0c1.js"><link rel="prefetch" href="/assets/js/21.11f6c5ac.js"><link rel="prefetch" href="/assets/js/22.2f932cfa.js"><link rel="prefetch" href="/assets/js/23.febf0f98.js"><link rel="prefetch" href="/assets/js/24.37e7b772.js"><link rel="prefetch" href="/assets/js/25.52766895.js"><link rel="prefetch" href="/assets/js/26.717d10cf.js"><link rel="prefetch" href="/assets/js/27.00d7a1ea.js"><link rel="prefetch" href="/assets/js/28.6b242ac7.js"><link rel="prefetch" href="/assets/js/29.5dd200cc.js"><link rel="prefetch" href="/assets/js/30.cb289c61.js"><link rel="prefetch" href="/assets/js/31.8993d6f2.js"><link rel="prefetch" href="/assets/js/32.c5371c05.js"><link rel="prefetch" href="/assets/js/33.f64d7737.js"><link rel="prefetch" href="/assets/js/34.99df84f3.js"><link rel="prefetch" href="/assets/js/35.8f2d0aa8.js"><link rel="prefetch" href="/assets/js/36.a0d52cf9.js"><link rel="prefetch" href="/assets/js/37.c39b01da.js"><link rel="prefetch" href="/assets/js/38.0d8f770b.js"><link rel="prefetch" href="/assets/js/39.8c101123.js"><link rel="prefetch" href="/assets/js/4.a60393f7.js"><link rel="prefetch" href="/assets/js/5.0405c433.js"><link rel="prefetch" href="/assets/js/6.46eddb6c.js"><link rel="prefetch" href="/assets/js/7.bcc9052a.js"><link rel="prefetch" href="/assets/js/8.ba6fab89.js"><link rel="prefetch" href="/assets/js/9.36ed7200.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.62942668.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">XXZZGOGO</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="frontend Menu" class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link router-link-active">
+  ECMAScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css3/" class="nav-link">
+  CSS3
+</a></li></ul></div></div><div class="nav-item"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/miniprogram/" class="nav-link">
+  小程序
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Network Menu" class="dropdown-title"><span class="title">网络相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/network/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/network/tcp/" class="nav-link">
+  TCP/IP
+</a></li><li class="dropdown-item"><!----> <a href="/network/cache/" class="nav-link">
+  CACHE
+</a></li><li class="dropdown-item"><!----> <a href="/network/ajax/" class="nav-link">
+  AJAX
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="frontend Menu" class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link router-link-active">
+  ECMAScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css3/" class="nav-link">
+  CSS3
+</a></li></ul></div></div><div class="nav-item"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/miniprogram/" class="nav-link">
+  小程序
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Network Menu" class="dropdown-title"><span class="title">网络相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/network/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/network/tcp/" class="nav-link">
+  TCP/IP
+</a></li><li class="dropdown-item"><!----> <a href="/network/cache/" class="nav-link">
+  CACHE
+</a></li><li class="dropdown-item"><!----> <a href="/network/ajax/" class="nav-link">
+  AJAX
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/frontend/JavaScript/" aria-current="page" class="sidebar-link">函数</a></li><li><a href="/frontend/JavaScript/one.html" class="sidebar-link">原型、继承相关</a></li><li><a href="/frontend/JavaScript/two.html" class="sidebar-link">数组</a></li><li><a href="/frontend/JavaScript/es6.html" class="sidebar-link">ES6</a></li><li><a href="/frontend/JavaScript/EventLoop.html" class="sidebar-link">Event Loop</a></li><li><a href="/frontend/JavaScript/exp.html" class="sidebar-link">正则表达式</a></li><li><a href="/frontend/JavaScript/dom.html" aria-current="page" class="active sidebar-link">DOM document object module</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#dom结构树" class="sidebar-link">DOM结构树</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#document-document-htmldocument" class="sidebar-link">document =&gt; (Document --&gt; HTMLDocument)</a></li></ul></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#htmlelement" class="sidebar-link">HTMLElement</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#element-dataset" class="sidebar-link">Element.dataset</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#element-clientheight-clientwidth" class="sidebar-link">Element.clientHeight/clientWidth</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#浏览器可视区域窗口的宽高" class="sidebar-link">浏览器可视区域窗口的宽高</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#元素全部高度" class="sidebar-link">元素全部高度</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#滚动条的距离（位置）" class="sidebar-link">滚动条的距离（位置）</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#element-clientleft，element-clienttop" class="sidebar-link">Element.clientLeft，Element.clientTop</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#element-offsetparent" class="sidebar-link">Element.offsetParent</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/dom.html#window-getcomputedstyle" class="sidebar-link">window.getComputedStyle()</a></li></ul></li></ul></li><li><a href="/frontend/JavaScript/bom.html" class="sidebar-link">bom</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="dom-document-object-module"><a href="#dom-document-object-module" class="header-anchor">#</a> DOM document object module</h1> <h2 id="dom结构树"><a href="#dom结构树" class="header-anchor">#</a> DOM结构树</h2> <p>DOM 的最小组成单位叫做节点（node）。文档的树形结构（DOM 树），就是由各种不同类型的节点组成。每个节点可以看作是文档树的一片叶子。所有 DOM 节点对象都继承了 Node 接口，拥有一些共同的属性和方法。这是 DOM 操作的基础。
+节点的类型有七种。</p> <ol><li>Document：整个文档树的顶层节点</li> <li>DocumentType：doctype标签（比如<code>&lt;!DOCTYPE html&gt;</code>）</li> <li>Element：网页的各种HTML标签（比如<code>&lt;body&gt;、&lt;a&gt;</code>等）</li> <li>Attr：网页元素的属性（比如class=&quot;right&quot;）</li> <li>Text：标签之间或标签包含的文本</li> <li>Comment：注释</li> <li>DocumentFragment：文档的片段</li></ol> <p><code>Node</code></p> <ul><li><code>Document/CharacterData/Element/Attributes</code> <ul><li><code>Document --&gt; HTMLDocument</code></li> <li><code>CharacterData --&gt; Text/ Comment(注释)</code></li> <li><code>Element --&gt; HTMLElement</code> <ul><li><code>HTMLElement --&gt; HTMLHead Element</code></li> <li><code>HTMLElement --&gt; HTMLBody Element</code></li> <li><code>HTMLElement --&gt; HTMLTitle Element</code></li> <li><code>HTMLElement --&gt; HTMLParagraph Element</code></li> <li><code>HTMLElement --&gt; HTMLInput Element</code></li> <li><code>HTMLElement --&gt; HTMLTable Element</code></li> <li><code>HTMLElement --&gt; Element</code></li></ul></li> <li><code>Attributes</code></li></ul></li></ul> <h3 id="document-document-htmldocument"><a href="#document-document-htmldocument" class="header-anchor">#</a> document =&gt; (Document --&gt; HTMLDocument)</h3> <ol><li><code>document.createElement(el)</code></li> <li><code>document.removeChild(el)</code></li> <li><code>document.appendChild(el)</code></li> <li><code>document.replaceChild(new, old)</code></li> <li><code>document.createDocumentFragment()</code></li></ol> <h2 id="htmlelement"><a href="#htmlelement" class="header-anchor">#</a> HTMLElement</h2> <p>不用的Element构造器构造不用元素节点,</p> <h3 id="element-dataset"><a href="#element-dataset" class="header-anchor">#</a> Element.dataset</h3> <p><code>Element.dataset</code>属性返回一个对象，可以从这个对象读写<code>data-</code>属性。
+除了使用<code>dataset</code>读写<code>data-</code>属性，也可以使用<code>Element.getAttribute()</code>和<code>Element</code>.<code>setAttribute()</code>，通过完整的属性名读写这些属性。</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">var</span> oDiv <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  oDiv<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">'1111'</span><span class="token punctuation">;</span>
+  oDiv<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>timestamp<span class="token operator">=</span> <span class="token number">131312123123</span><span class="token punctuation">;</span><span class="token comment">//返回一个对象</span>
+  oDiv<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;data-foo&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>oDiv<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;data-timestamp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>oDiv<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;data-foo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>oDiv<span class="token punctuation">)</span>
+</code></pre></div><h3 id="element-clientheight-clientwidth"><a href="#element-clientheight-clientwidth" class="header-anchor">#</a> Element.clientHeight/clientWidth</h3> <h3 id="浏览器可视区域窗口的宽高"><a href="#浏览器可视区域窗口的宽高" class="header-anchor">#</a> 浏览器可视区域窗口的宽高</h3> <div class="language-js extra-class"><pre class="language-js"><code>w3c标准
+window<span class="token punctuation">.</span>innerWidth
+window<span class="token punctuation">.</span>innerHeight
+
+<span class="token constant">IE9</span>、<span class="token constant">IE8</span>以下标准模式
+谷歌浏览器为<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">undefined</span><span class="token template-punctuation string">`</span></span>
+document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientWidth
+document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHight
+ 网页总高度
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>clientHeight
+<span class="token comment">//获取视口的宽高</span>
+<span class="token keyword">function</span> <span class="token function">getViewportSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>innerHeight<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//window.innerHeight w3c标准 如果存在即使用这个</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      width<span class="token operator">:</span> window<span class="token punctuation">.</span>innerWidth<span class="token punctuation">,</span>
+      height<span class="token operator">:</span> window<span class="token punctuation">.</span>innerHeight
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>compatMode <span class="token operator">===</span> <span class="token string">'BackCompt'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">//怪异模式使用document.body.clientWidth/Height</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        width<span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>clientWidth<span class="token punctuation">,</span>
+        height<span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>clientHeight
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token comment">//非怪异模式下使用document.documentElement.clientWidth/Height</span>
+      width<span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientWidth<span class="token punctuation">,</span>
+      height<span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHeight
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="元素全部高度"><a href="#元素全部高度" class="header-anchor">#</a> 元素全部高度</h3> <p>元素高度包括由于溢出导致的视图中不可见内容
+整张网页的总高度可以从<code>document.documentElement</code>或<code>document.body</code>上读取。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 返回网页的总高度</span>
+document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollHeight
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollHeight
+
+
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollWidth
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollHeight
+document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollWidth
+document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollHeight
+整张网页的总高度
+<span class="token keyword">function</span> <span class="token function">getScrollSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollHeight<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span><span class="token punctuation">{</span>
+          width<span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollWidth<span class="token punctuation">,</span>
+          height<span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollHeight 
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span><span class="token punctuation">{</span>
+          width<span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollWidth<span class="token punctuation">,</span>
+          height<span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollHeight
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="滚动条的距离（位置）"><a href="#滚动条的距离（位置）" class="header-anchor">#</a> 滚动条的距离（位置）</h3> <p><code>Element.scrollLeft</code>属性表示当前元素的水平滚动条向右侧滚动的像素数量，<code>Element.scrollTop</code>属性表示当前元素的垂直滚动条向下滚动的像素数量。对于那些没有滚动条的网页元素，这两个属性总是等于0。
+如果要查看整张网页的水平的和垂直的滚动距离，要从<code>document.documentElement</code>元素上读取。</p> <div class="language-js extra-class"><pre class="language-js"><code>获取滚动条距离 window<span class="token punctuation">.</span>pageXOffset <span class="token constant">W3C</span>规范  
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft<span class="token operator">/</span>Top   document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft<span class="token operator">/</span>Top  只会存在其中一个
+获取滚动的像素值。
+<span class="token keyword">function</span> <span class="token function">getScrollOffset</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//window.pageXOffset == window.scrollX; // 总是 true</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>pageXOffset<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      left<span class="token operator">:</span> window<span class="token punctuation">.</span>pageXOffset <span class="token punctuation">,</span>
+      top<span class="token operator">:</span> window<span class="token punctuation">.</span>pageYOffset 
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      left<span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft <span class="token operator">+</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">,</span>
+      top<span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop <span class="token operator">+</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*********************************/</span>
+document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft
+document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop
+<span class="token comment">/**/</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop
+上下加一起   有上就没有下 
+document<span class="token punctuation">.</span>Element<span class="token punctuation">.</span>scrollLeft
+document<span class="token punctuation">.</span>Element<span class="token punctuation">.</span>scrollTop
+</code></pre></div><h3 id="element-clientleft，element-clienttop"><a href="#element-clientleft，element-clienttop" class="header-anchor">#</a> Element.clientLeft，Element.clientTop</h3> <p>Element.clientLeft属性等于元素节点左边框（left border）的宽度（单位像素），不包括左侧的padding和margin。如果没有设置左边框，或者是行内元素（display: inline），该属性返回0。该属性总是返回整数值，如果是小数，会四舍五入。</p> <p>Element.clientTop属性等于网页元素顶部边框的宽度（单位像素），其他特点都与clientLeft相同。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">pagePos</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> sLeft <span class="token operator">=</span> getScrollOffset<span class="token punctuation">.</span>left<span class="token punctuation">,</span>
+    sTop <span class="token operator">=</span> getScrollOffset<span class="token punctuation">.</span>top<span class="token punctuation">,</span>
+    cLeft <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientLeft <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    cTop <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientTop <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token constant">X</span><span class="token operator">:</span> e<span class="token punctuation">.</span>clientX <span class="token operator">+</span> sLeft <span class="token operator">-</span> cLeft<span class="token punctuation">,</span>
+    <span class="token constant">Y</span><span class="token operator">:</span> e<span class="token punctuation">.</span>clientY <span class="token operator">+</span> sTop <span class="token operator">-</span> cTop
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="element-offsetparent"><a href="#element-offsetparent" class="header-anchor">#</a> Element.offsetParent</h3> <p><code>Element.offsetParent</code>属性返回最靠近当前元素的、并且 CSS 的<code>position</code>属性不等于<code>static</code>的上层元素
+<code>Element.offsetLeft</code>返回当前元素左上角相对于<code>Element.offsetParent</code>节点的水平位移，<code>Element.offsetTop</code>返回垂直位移，单位为像素。通常，这两个值是指相对于父节点的位移。</p> <h3 id="window-getcomputedstyle"><a href="#window-getcomputedstyle" class="header-anchor">#</a> window.getComputedStyle()</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">getStyle</span><span class="token punctuation">(</span><span class="token parameter">elem<span class="token punctuation">,</span> prop</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>getComputedStyle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>prop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> window<span class="token punctuation">.</span><span class="token function">getComputedStyle</span><span class="token punctuation">(</span>elem<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">[</span>prop<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> window<span class="token punctuation">.</span><span class="token function">getComputedStyle</span><span class="token punctuation">(</span>elem<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token comment">//null是用来选择伪元素</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>prop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> elem<span class="token punctuation">.</span>currentStyle<span class="token punctuation">[</span>prop<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> elem<span class="token punctuation">.</span>currentStyle
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/JavaScript/exp.html" class="prev">
+        正则表达式
+      </a></span> <span class="next"><a href="/frontend/JavaScript/bom.html">
+        bom
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7acbcb6e.js" defer></script><script src="/assets/js/2.b0722bfe.js" defer></script><script src="/assets/js/3.905a52e1.js" defer></script><script src="/assets/js/12.c82412a4.js" defer></script>
+  </body>
+</html>

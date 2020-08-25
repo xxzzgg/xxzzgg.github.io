@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>网络请求 | XXZZGOGO</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/spider.png">
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.62942668.css" as="style"><link rel="preload" href="/assets/js/app.7acbcb6e.js" as="script"><link rel="preload" href="/assets/js/2.b0722bfe.js" as="script"><link rel="preload" href="/assets/js/3.905a52e1.js" as="script"><link rel="preload" href="/assets/js/26.717d10cf.js" as="script"><link rel="prefetch" href="/assets/js/10.bcee2f9c.js"><link rel="prefetch" href="/assets/js/11.658cd361.js"><link rel="prefetch" href="/assets/js/12.c82412a4.js"><link rel="prefetch" href="/assets/js/13.fc07f828.js"><link rel="prefetch" href="/assets/js/14.978995d9.js"><link rel="prefetch" href="/assets/js/15.4a8d360d.js"><link rel="prefetch" href="/assets/js/16.0247f987.js"><link rel="prefetch" href="/assets/js/17.8736e5eb.js"><link rel="prefetch" href="/assets/js/18.9b3ef7a2.js"><link rel="prefetch" href="/assets/js/19.9a6b228e.js"><link rel="prefetch" href="/assets/js/20.1d56a0c1.js"><link rel="prefetch" href="/assets/js/21.11f6c5ac.js"><link rel="prefetch" href="/assets/js/22.2f932cfa.js"><link rel="prefetch" href="/assets/js/23.febf0f98.js"><link rel="prefetch" href="/assets/js/24.37e7b772.js"><link rel="prefetch" href="/assets/js/25.52766895.js"><link rel="prefetch" href="/assets/js/27.00d7a1ea.js"><link rel="prefetch" href="/assets/js/28.6b242ac7.js"><link rel="prefetch" href="/assets/js/29.5dd200cc.js"><link rel="prefetch" href="/assets/js/30.cb289c61.js"><link rel="prefetch" href="/assets/js/31.8993d6f2.js"><link rel="prefetch" href="/assets/js/32.c5371c05.js"><link rel="prefetch" href="/assets/js/33.f64d7737.js"><link rel="prefetch" href="/assets/js/34.99df84f3.js"><link rel="prefetch" href="/assets/js/35.8f2d0aa8.js"><link rel="prefetch" href="/assets/js/36.a0d52cf9.js"><link rel="prefetch" href="/assets/js/37.c39b01da.js"><link rel="prefetch" href="/assets/js/38.0d8f770b.js"><link rel="prefetch" href="/assets/js/39.8c101123.js"><link rel="prefetch" href="/assets/js/4.a60393f7.js"><link rel="prefetch" href="/assets/js/5.0405c433.js"><link rel="prefetch" href="/assets/js/6.46eddb6c.js"><link rel="prefetch" href="/assets/js/7.bcc9052a.js"><link rel="prefetch" href="/assets/js/8.ba6fab89.js"><link rel="prefetch" href="/assets/js/9.36ed7200.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.62942668.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">XXZZGOGO</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="frontend Menu" class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css3/" class="nav-link">
+  CSS3
+</a></li></ul></div></div><div class="nav-item"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/miniprogram/" class="nav-link">
+  小程序
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Network Menu" class="dropdown-title"><span class="title">网络相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/network/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/network/tcp/" class="nav-link">
+  TCP/IP
+</a></li><li class="dropdown-item"><!----> <a href="/network/cache/" class="nav-link">
+  CACHE
+</a></li><li class="dropdown-item"><!----> <a href="/network/ajax/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  AJAX
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="frontend Menu" class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css3/" class="nav-link">
+  CSS3
+</a></li></ul></div></div><div class="nav-item"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/miniprogram/" class="nav-link">
+  小程序
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Network Menu" class="dropdown-title"><span class="title">网络相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/network/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/network/tcp/" class="nav-link">
+  TCP/IP
+</a></li><li class="dropdown-item"><!----> <a href="/network/cache/" class="nav-link">
+  CACHE
+</a></li><li class="dropdown-item"><!----> <a href="/network/ajax/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  AJAX
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/network/ajax/" aria-current="page" class="active sidebar-link">网络请求</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/network/ajax/#ajax-（xmind详细）" class="sidebar-link">AJAX （xmind详细）</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/network/ajax/#axios" class="sidebar-link">axios</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#使用同步代码进行异步操作-async" class="sidebar-link">使用同步代码进行异步操作(async)</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#捕获错误" class="sidebar-link">捕获错误</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#默认配置" class="sidebar-link">默认配置</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#创建新的实例" class="sidebar-link">创建新的实例</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#拦截器" class="sidebar-link">拦截器</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#二次封装" class="sidebar-link">二次封装</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#fetch-api" class="sidebar-link">Fetch API</a></li></ul></li><li class="sidebar-sub-header"><a href="/network/ajax/#跨域http请求" class="sidebar-link">跨域HTTP请求</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/network/ajax/#不受同源策略限制的项" class="sidebar-link">不受同源策略限制的项</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#同源" class="sidebar-link">同源</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#不同源（跨域）" class="sidebar-link">不同源（跨域）</a></li><li class="sidebar-sub-header"><a href="/network/ajax/#跨域的方式" class="sidebar-link">跨域的方式</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="网络请求"><a href="#网络请求" class="header-anchor">#</a> 网络请求</h1> <h2 id="ajax-（xmind详细）"><a href="#ajax-（xmind详细）" class="header-anchor">#</a> AJAX （xmind详细）</h2> <p>Asynchronous Javascript And XML
+<a href="http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest_level_2.html" target="_blank" rel="noopener noreferrer">阮一峰<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="axios"><a href="#axios" class="header-anchor">#</a> axios</h3> <p><code>react</code>中基本用法</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token function">componentDidMount</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      url<span class="token operator">:</span><span class="token string">&quot;http://httpbin.org/post&quot;</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">&quot;xzl&quot;</span><span class="token punctuation">,</span>
+        age<span class="token operator">:</span> <span class="token number">18</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      method<span class="token operator">:</span> <span class="token string">&quot;POST&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://httpbin.org/get&quot;</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">&quot;xzl&quot;</span><span class="token punctuation">,</span>age<span class="token operator">:</span><span class="token number">18</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    axios<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">&quot;http://httpbin.org/post&quot;</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">&quot;xzl&quot;</span><span class="token punctuation">,</span>age<span class="token operator">:</span><span class="token number">18</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//源码</span>
+<span class="token keyword">function</span> <span class="token function">createInstance</span><span class="token punctuation">(</span><span class="token parameter">defaultConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> context <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Axios</span><span class="token punctuation">(</span>defaultConfig<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//create Object</span>
+  <span class="token keyword">var</span> instance <span class="token operator">=</span> <span class="token function">bind</span><span class="token punctuation">(</span><span class="token class-name">Axios</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>request<span class="token punctuation">,</span> context<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//'use strict';</span>
+    <span class="token comment">//bind</span>
+    <span class="token comment">// module.exports = function bind(fn, thisArg) {</span>
+    <span class="token comment">//   return function wrap() {</span>
+    <span class="token comment">//     var args = new Array(arguments.length);</span>
+    <span class="token comment">//     for (var i = 0; i &lt; args.length; i++) {</span>
+    <span class="token comment">//       args[i] = arguments[i];</span>
+    <span class="token comment">//     }</span>
+    <span class="token comment">//     return fn.apply(thisArg, args);</span>
+    <span class="token comment">//   };</span>
+    <span class="token comment">// };</span>
+    <span class="token comment">//本质上都是调用原型上的request函数</span>
+  <span class="token comment">// Copy axios.prototype to instance</span>
+  utils<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> <span class="token class-name">Axios</span><span class="token punctuation">.</span>prototype<span class="token punctuation">,</span> context<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Copy context to instance</span>
+  utils<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> context<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> instance<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*---------------------*/</span>
+utils<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'delete'</span><span class="token punctuation">,</span> <span class="token string">'get'</span><span class="token punctuation">,</span> <span class="token string">'head'</span><span class="token punctuation">,</span> <span class="token string">'options'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token function">forEachMethodNoData</span><span class="token punctuation">(</span><span class="token parameter">method</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">/*eslint func-names:0*/</span>
+  <span class="token class-name">Axios</span><span class="token punctuation">.</span>prototype<span class="token punctuation">[</span>method<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> config</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>utils<span class="token punctuation">.</span><span class="token function">merge</span><span class="token punctuation">(</span>config <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      method<span class="token operator">:</span> method<span class="token punctuation">,</span>
+      url<span class="token operator">:</span> url
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+utils<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'post'</span><span class="token punctuation">,</span> <span class="token string">'put'</span><span class="token punctuation">,</span> <span class="token string">'patch'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token function">forEachMethodWithData</span><span class="token punctuation">(</span><span class="token parameter">method</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">/*eslint func-names:0*/</span>
+  <span class="token class-name">Axios</span><span class="token punctuation">.</span>prototype<span class="token punctuation">[</span>method<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> data<span class="token punctuation">,</span> config</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>utils<span class="token punctuation">.</span><span class="token function">merge</span><span class="token punctuation">(</span>config <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      method<span class="token operator">:</span> method<span class="token punctuation">,</span>
+      url<span class="token operator">:</span> url<span class="token punctuation">,</span>
+      data<span class="token operator">:</span> data
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="使用同步代码进行异步操作-async"><a href="#使用同步代码进行异步操作-async" class="header-anchor">#</a> 使用同步代码进行异步操作(async)</h3> <p>没有使用<code>then</code></p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">componentDidMount</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      url<span class="token operator">:</span><span class="token string">&quot;http://httpbin.org/post&quot;</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">&quot;xzl&quot;</span><span class="token punctuation">,</span>
+        age<span class="token operator">:</span> <span class="token number">18</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      method<span class="token operator">:</span> <span class="token string">&quot;POST&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//同步拿到res</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+  <span class="token punctuation">}</span>
+  <span class="token comment">/*------------*/</span>
+  <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">getTopBannersss</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span>  res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      url<span class="token operator">:</span> <span class="token string">&quot;/banner&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">111111111111</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>banners<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">getTopBannersss</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="捕获错误"><a href="#捕获错误" class="header-anchor">#</a> 捕获错误</h3> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token keyword">async</span> <span class="token function">componentDidMount</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> result <span class="token operator">=</span><span class="token keyword">await</span> <span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      url<span class="token operator">:</span><span class="token string">&quot;http://httpbin.org/post&quot;</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">&quot;xzl&quot;</span><span class="token punctuation">,</span>
+        age<span class="token operator">:</span> <span class="token number">18</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      method<span class="token operator">:</span> <span class="token string">&quot;POST&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+  <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="默认配置"><a href="#默认配置" class="header-anchor">#</a> 默认配置</h3> <h3 id="创建新的实例"><a href="#创建新的实例" class="header-anchor">#</a> 创建新的实例</h3> <p>场景：去多个不用的服务器去请求数据,如果使用<code>axios</code>默认的实例只能请求一个服务器
+解决：使用<code>axios.create()</code>去创建多个实例去请求不用的服务器
+本质：还是调用<code>createInstance</code>这个方法</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">const</span> instance1 <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    baseURL<span class="token operator">:</span> <span class="token string">&quot;http://httpbin.org/post&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  
+  instance1<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">//可以继续配置</span>
+</code></pre></div><h3 id="拦截器"><a href="#拦截器" class="header-anchor">#</a> 拦截器</h3> <div class="language-js extra-class"><pre class="language-js"><code>    axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">config</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">//发送网络请求时，执行一些操作</span>
+      <span class="token comment">//跳转登录页面，显示loading图标 等等..</span>
+      <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">//....</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> res<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+     <span class="token comment">//...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="二次封装"><a href="#二次封装" class="header-anchor">#</a> 二次封装</h3> <p>思路一：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//network/request.js</span>
+<span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">request</span> <span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> instance <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    baseURL<span class="token operator">:</span> <span class="token string">'http://106.54.54.237:8000/api/mn'</span><span class="token punctuation">,</span>
+    timeout<span class="token operator">:</span> <span class="token number">5000</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  instance<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">config</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  instance<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span>data
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> <span class="token function">instance</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//Promise对象</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>思路二：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// config.js 配置相关</span>
+<span class="token comment">// request.js 请求相关</span>
+</code></pre></div><h3 id="fetch-api"><a href="#fetch-api" class="header-anchor">#</a> Fetch API</h3> <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="noopener noreferrer">MDN Fetch<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="跨域http请求"><a href="#跨域http请求" class="header-anchor">#</a> 跨域HTTP请求</h2> <h3 id="不受同源策略限制的项"><a href="#不受同源策略限制的项" class="header-anchor">#</a> 不受同源策略限制的项</h3> <p>同源策略 <code>Same-Origin-Policy(SOP)</code>
+只针对浏览器(客户端)</p> <ol><li>页面的超链接</li> <li>重定向页面</li> <li>表单的提交</li> <li>资源引入<code>script src/link href/img src/iframe src</code></li></ol> <h3 id="同源"><a href="#同源" class="header-anchor">#</a> 同源</h3> <p>相同的协议&amp;&amp;相同的域名&amp;&amp;相同的端口</p> <h3 id="不同源（跨域）"><a href="#不同源（跨域）" class="header-anchor">#</a> 不同源（跨域）</h3> <p>不同的的协议||不同的域名||不同的端口</p> <h3 id="跨域的方式"><a href="#跨域的方式" class="header-anchor">#</a> 跨域的方式</h3></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7acbcb6e.js" defer></script><script src="/assets/js/2.b0722bfe.js" defer></script><script src="/assets/js/3.905a52e1.js" defer></script><script src="/assets/js/26.717d10cf.js" defer></script>
+  </body>
+</html>

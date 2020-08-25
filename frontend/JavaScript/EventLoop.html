@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Event Loop | XXZZGOGO</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/spider.png">
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.62942668.css" as="style"><link rel="preload" href="/assets/js/app.7acbcb6e.js" as="script"><link rel="preload" href="/assets/js/2.b0722bfe.js" as="script"><link rel="preload" href="/assets/js/3.905a52e1.js" as="script"><link rel="preload" href="/assets/js/9.36ed7200.js" as="script"><link rel="prefetch" href="/assets/js/10.bcee2f9c.js"><link rel="prefetch" href="/assets/js/11.658cd361.js"><link rel="prefetch" href="/assets/js/12.c82412a4.js"><link rel="prefetch" href="/assets/js/13.fc07f828.js"><link rel="prefetch" href="/assets/js/14.978995d9.js"><link rel="prefetch" href="/assets/js/15.4a8d360d.js"><link rel="prefetch" href="/assets/js/16.0247f987.js"><link rel="prefetch" href="/assets/js/17.8736e5eb.js"><link rel="prefetch" href="/assets/js/18.9b3ef7a2.js"><link rel="prefetch" href="/assets/js/19.9a6b228e.js"><link rel="prefetch" href="/assets/js/20.1d56a0c1.js"><link rel="prefetch" href="/assets/js/21.11f6c5ac.js"><link rel="prefetch" href="/assets/js/22.2f932cfa.js"><link rel="prefetch" href="/assets/js/23.febf0f98.js"><link rel="prefetch" href="/assets/js/24.37e7b772.js"><link rel="prefetch" href="/assets/js/25.52766895.js"><link rel="prefetch" href="/assets/js/26.717d10cf.js"><link rel="prefetch" href="/assets/js/27.00d7a1ea.js"><link rel="prefetch" href="/assets/js/28.6b242ac7.js"><link rel="prefetch" href="/assets/js/29.5dd200cc.js"><link rel="prefetch" href="/assets/js/30.cb289c61.js"><link rel="prefetch" href="/assets/js/31.8993d6f2.js"><link rel="prefetch" href="/assets/js/32.c5371c05.js"><link rel="prefetch" href="/assets/js/33.f64d7737.js"><link rel="prefetch" href="/assets/js/34.99df84f3.js"><link rel="prefetch" href="/assets/js/35.8f2d0aa8.js"><link rel="prefetch" href="/assets/js/36.a0d52cf9.js"><link rel="prefetch" href="/assets/js/37.c39b01da.js"><link rel="prefetch" href="/assets/js/38.0d8f770b.js"><link rel="prefetch" href="/assets/js/39.8c101123.js"><link rel="prefetch" href="/assets/js/4.a60393f7.js"><link rel="prefetch" href="/assets/js/5.0405c433.js"><link rel="prefetch" href="/assets/js/6.46eddb6c.js"><link rel="prefetch" href="/assets/js/7.bcc9052a.js"><link rel="prefetch" href="/assets/js/8.ba6fab89.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.62942668.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">XXZZGOGO</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="frontend Menu" class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link router-link-active">
+  ECMAScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css3/" class="nav-link">
+  CSS3
+</a></li></ul></div></div><div class="nav-item"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/miniprogram/" class="nav-link">
+  小程序
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Network Menu" class="dropdown-title"><span class="title">网络相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/network/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/network/tcp/" class="nav-link">
+  TCP/IP
+</a></li><li class="dropdown-item"><!----> <a href="/network/cache/" class="nav-link">
+  CACHE
+</a></li><li class="dropdown-item"><!----> <a href="/network/ajax/" class="nav-link">
+  AJAX
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="frontend Menu" class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link router-link-active">
+  ECMAScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css3/" class="nav-link">
+  CSS3
+</a></li></ul></div></div><div class="nav-item"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/miniprogram/" class="nav-link">
+  小程序
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Network Menu" class="dropdown-title"><span class="title">网络相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/network/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/network/tcp/" class="nav-link">
+  TCP/IP
+</a></li><li class="dropdown-item"><!----> <a href="/network/cache/" class="nav-link">
+  CACHE
+</a></li><li class="dropdown-item"><!----> <a href="/network/ajax/" class="nav-link">
+  AJAX
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/frontend/JavaScript/" aria-current="page" class="sidebar-link">函数</a></li><li><a href="/frontend/JavaScript/one.html" class="sidebar-link">原型、继承相关</a></li><li><a href="/frontend/JavaScript/two.html" class="sidebar-link">数组</a></li><li><a href="/frontend/JavaScript/es6.html" class="sidebar-link">ES6</a></li><li><a href="/frontend/JavaScript/EventLoop.html" aria-current="page" class="active sidebar-link">Event Loop</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#promise" class="sidebar-link">Promise</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#promise-then-catch" class="sidebar-link">Promise.then/catch()</a></li></ul></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#进程与线程" class="sidebar-link">进程与线程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#进程与线程的联系" class="sidebar-link">进程与线程的联系</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#浏览器是多进程的" class="sidebar-link">浏览器是多进程的</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#浏览器渲染引擎进程" class="sidebar-link">浏览器渲染引擎进程</a></li></ul></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#definitions" class="sidebar-link">definitions</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#js的运行原理" class="sidebar-link">JS的运行原理</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#macro-task大概包括：" class="sidebar-link">macro-task大概包括：</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#micro-task大概包括" class="sidebar-link">micro-task大概包括:</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#调用栈call-back" class="sidebar-link">调用栈call back</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#时间线" class="sidebar-link">时间线</a></li><li class="sidebar-sub-header"><a href="/frontend/JavaScript/EventLoop.html#题目" class="sidebar-link">题目</a></li></ul></li></ul></li><li><a href="/frontend/JavaScript/exp.html" class="sidebar-link">正则表达式</a></li><li><a href="/frontend/JavaScript/dom.html" class="sidebar-link">DOM document object module</a></li><li><a href="/frontend/JavaScript/bom.html" class="sidebar-link">bom</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="event-loop"><a href="#event-loop" class="header-anchor">#</a> Event Loop</h1> <h2 id="promise"><a href="#promise" class="header-anchor">#</a> Promise</h2> <h3 id="promise-then-catch"><a href="#promise-then-catch" class="header-anchor">#</a> Promise.then/catch()</h3> <p>then中传入的函数会被推入到microtasks(异步任务队列的一种),在同步任务执行完毕执行</p> <h2 id="进程与线程"><a href="#进程与线程" class="header-anchor">#</a> 进程与线程</h2> <p>进程与线程的区别: 1、进程是资源分配的最小单位,线程是程序执行的最小单位(资源调度的最小单位)</p> <h3 id="进程与线程的联系"><a href="#进程与线程的联系" class="header-anchor">#</a> 进程与线程的联系</h3> <ol><li>线程在进程下行进</li> <li>一个进程可以包含多个线程</li> <li>不同进程间数据很难共享</li> <li>同一进程下不同线程间数据很易共享</li> <li>进程要比线程消耗更多的计算机资源</li> <li>进程间不会相互影响，一个线程挂掉将导致整个进程挂掉</li> <li>进程可以拓展到多机，进程最适合多核</li></ol> <h3 id="浏览器是多进程的"><a href="#浏览器是多进程的" class="header-anchor">#</a> 浏览器是多进程的</h3> <p><code>browser进程</code>、<code>第三方插件进程</code>、<code>GPU进程</code>、<code>浏览器渲染引擎进程（浏览器内核）</code>、
+<strong>浏览器渲染引擎进程（浏览器内核）是多线程的</strong></p> <h3 id="浏览器渲染引擎进程"><a href="#浏览器渲染引擎进程" class="header-anchor">#</a> 浏览器渲染引擎进程</h3> <ol><li><code>JS引擎线程(单线程)</code>（js必须是单线程-&gt;不然会<code>DOM冲突</code>）</li> <li><code>GUI线程</code>(和JS引擎线程互斥) （用来渲染用户界面）</li> <li><code>http</code>网络请求线程 <code>--&gt;webAPIs</code></li> <li>定时器触发线程  <code>--&gt;webAPIs</code></li> <li>浏览器事件处理线程  <code>--&gt;webAPIs</code></li></ol> <p>**JS的运行原理：**js引擎线程（单线程）同时执行异步执行的（事件驱动）
+执行异步的方式是事件驱动的方式进行模拟(浏览器渲染引擎提供的事件驱动模型（以上<code>3、4、5</code>）)</p> <h2 id="definitions"><a href="#definitions" class="header-anchor">#</a> definitions</h2> <p><a href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loops" target="_blank" rel="noopener noreferrer">HTMlStandard<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+An event loop has one or more task queues. A task queue is a set of tasks.
+一个时间轮询有一个或多个任务队列，任务队列为set结构不是queues</p> <ul><li>The microtask queue is not a task queue.</li></ul> <ol><li><p>Each event loop has a currently running task, which is either a task or null. Initially, this is null. It is used to handle reentrancy.</p></li> <li><p>Each event loop has a microtask queue, which is a queue of microtasks, initially empty. A microtask is a colloquial way of referring to a task that was created via the queue a microtask algorithm.</p></li> <li><p>Each event loop has a performing a microtask checkpoint boolean, which is initially false. It is used to prevent reentrant invocation of the perform a microtask checkpoint algorithm.</p></li></ol> <h3 id="js的运行原理"><a href="#js的运行原理" class="header-anchor">#</a> JS的运行原理</h3> <ol><li>同步的代码进行主线程执行，异步的代码放在任务队列(task queue)等待主线程通知执行</li> <li>异步的代码分为 宏任务队列(macro task)和微任务队列(mirco task)</li></ol> <h3 id="macro-task大概包括："><a href="#macro-task大概包括：" class="header-anchor">#</a> macro-task大概包括：</h3> <ol><li>script(整体代码)</li> <li>setTimeout</li> <li>setInterval</li> <li>setImmediate</li> <li>I/O</li> <li>UI render</li></ol> <h3 id="micro-task大概包括"><a href="#micro-task大概包括" class="header-anchor">#</a> micro-task大概包括:</h3> <ol><li>process.nextTick</li> <li>Promise。 Promise.then/catch/finally  Promise的回调才是微任务</li> <li>Async/Await(实际就是promise)</li> <li>MutationObserver(html5新特性)</li></ol> <h3 id="调用栈call-back"><a href="#调用栈call-back" class="header-anchor">#</a> 调用栈call back</h3> <p>调用栈是一种数据结构，它记录了我们在程序中的位置。如果我们<strong>运行到</strong>一个函数，它就会将其放置到栈顶，当从这个函数返回的时候，就会将这个函数从栈顶弹出，这就是调用栈做的事情。
+<strong>异步</strong>
+需要注意的是，<code>setTimeout(…)</code>不会自动将回调放到事件循环队列中。它设置了一个计时器。当计时器过期时，环境将回调放到事件循环中，以便将来某个标记<code>(tick)</code>将接收并执行它。请看下面的代码:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">setTimeout</span><span class="token punctuation">(</span>myCallback<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//1000ms 后加入到Event Queue  等待执行</span>
+</code></pre></div><p>这并不意味着<code>myCallback</code>将在1000毫秒后就立马执行，而是在1000毫秒后，<code>myCallback</code>被添加到队列中。但是，如果队列有其他事件在前面添加回调刚必须等待前后的执行完后在执行<code>myCallback</code>。</p> <p>有不少的文章和教程上开始使用异步<code>JavaScript</code>代码,建议用<code>setTimeout(回调,0)</code>,现在你知道事件循环和<code>setTimeout</code>是如何工作的:调用<code>setTimeout</code> 0毫秒作为第二个参数只是推迟回调将它放到回调队列中,直到调用堆栈是空的。</p> <h3 id="时间线"><a href="#时间线" class="header-anchor">#</a> 时间线</h3> <p>时间线</p> <ol><li><p>定义：在浏览器加载页面的那一刻（DOM）到页面加载完全结束的这个过程中，按顺序发生的每一件时间的总流程 为时间线</p></li> <li><p>解析文档：构建domTree<br> <code>document.readyStyle = loading</code></p></li> <li><p>link  开新的线程 异步加载css外部文件   style</p></li> <li><p>没有设置异步加载的script ，阻塞文档解析
+等待JS脚本 加载并且执行完成后，继续解析文档</p></li> <li><p>异步加载的script，异步加载JS脚本（async ）并且执行--，不阻塞解析文档（不能使用document.write()会报错）==  defer 是解析完在执行  慎用异步</p></li> <li><p>解析文档遇到img 先解析这个节点 src &quot; &quot; 创建加载线程 异步加载图片资源  不阻塞解析文档</p></li> <li><p>文档解析完成 document.readyStyle = 'interactive' 交互的</p></li> <li><p>文档解析完成  ：defer script  JS脚本开始按照顺序执行   async直接执行.</p></li> <li><p>文档解析完成后立刻触发：DOMContentLoaded事件 ---&gt;
+程序：同步的脚本执行阶段  ----&gt;  事件驱动阶段(用户)</p></li> <li><p>async script 加载并执行完毕 img等资源加载完毕 页面完全加载完毕 window对象中的onload事件 才 触发
+document.readyStyle = 'complete'</p></li></ol> <h3 id="题目"><a href="#题目" class="header-anchor">#</a> 题目</h3> <div class="language-js extra-class"><pre class="language-js"><code>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/JavaScript/es6.html" class="prev">
+        ES6
+      </a></span> <span class="next"><a href="/frontend/JavaScript/exp.html">
+        正则表达式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7acbcb6e.js" defer></script><script src="/assets/js/2.b0722bfe.js" defer></script><script src="/assets/js/3.905a52e1.js" defer></script><script src="/assets/js/9.36ed7200.js" defer></script>
+  </body>
+</html>
